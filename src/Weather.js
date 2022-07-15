@@ -102,7 +102,11 @@ export default function Weather() {
           <div className="weather-forecast">{weather}</div>
         </div>
         <footer>
-          <a href="/" target="_blank" className="reference">
+          <a
+            href="https://jovial-tarsier-f86f4e.netlify.app/"
+            target="_blank"
+            className="reference"
+          >
             Open Source Code
           </a>{" "}
           by{" "}
