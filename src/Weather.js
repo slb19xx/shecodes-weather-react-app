@@ -12,10 +12,15 @@ export default function Weather() {
               type="Search"
               placeholder="Enter a city..."
               className="form-control"
+              autoFocus="on"
             />
           </div>
           <div className="col-3">
-            <input type="Submit" value="Search" className="btn btn-primary" />
+            <input
+              type="Submit"
+              value="Search"
+              className="btn btn-primary w-100"
+            />
           </div>
         </div>
       </form>
@@ -23,12 +28,18 @@ export default function Weather() {
       <ul>
         <li>Monday 03:30</li>
         <li>Thunderstorm</li>
-        <li></li>
       </ul>
-      <div className="row">
+      <div className="row mt-3">
         <div className="col-6">
-          <img src="http://openweathermap.org/img/wn/01d@2x.png" alt="Sunny" />
-          75°F
+          <div className="clearfix">
+            <img
+              src="http://openweathermap.org/img/wn/04d@2x.png"
+              alt="Sunny"
+              className="float-left"
+            />
+            <span className="temperature">75</span>
+            <span className="unit">°F</span>
+          </div>
         </div>
         <div className="col-6">
           <ul>
