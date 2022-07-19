@@ -32,7 +32,7 @@ export default function Weather(props) {
     if (city.length > 0) {
       search();
     } else {
-      alert("Please enter a city name 😉");
+      alert("Please enter a city name");
     }
   }
 
