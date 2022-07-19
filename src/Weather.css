@@ -31,14 +31,15 @@
 
 .Weather canvas {
   margin-top: 5px;
-  display: inline-block;
+  position: relative;
 }
 
 .Weather .temperature {
   font-size: 64px;
   font-weight: 400;
   color: #ff69b4;
-  line-height: 64px;
+  line-height: 1;
+  margin-left: 5px;
 }
 
 .Weather .unit {
