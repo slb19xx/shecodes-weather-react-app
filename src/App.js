@@ -10,11 +10,16 @@ export default function App() {
           <a
             href="https://github.com/slb19xx/weather-react-app"
             target="_blank"
+            rel="noreferrer"
           >
             Open Source Code
           </a>{" "}
           by{" "}
-          <a href="https://www.linkedin.com/in/sharibaldie/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/sharibaldie/"
+            target="_blank"
+            rel="noreferrer"
+          >
             Shari Baldie
           </a>
         </footer>
