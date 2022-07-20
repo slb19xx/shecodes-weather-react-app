@@ -21,7 +21,7 @@ export default function WeatherInfo(props) {
             alt={props.data.description}
             size={50}
           />
-          <WeatherTemperature fahrenheit={props.data.temperature} />
+          <WeatherTemperature fahrenheit={Math.round(props.data.temperature)} />
         </div>
         <div className="col-6">
           <ul>

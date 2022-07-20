@@ -3,6 +3,7 @@ import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
+import { Grid } from "react-loader-spinner";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -14,7 +15,7 @@ export default function Weather(props) {
       coordinates: response.data.coord,
       city: response.data.name,
       date: new Date(response.data.dt * 1000),
-      temperature: Math.round(response.data.main.temp),
+      temperature: response.data.main.temp,
       description: response.data.weather[0].description,
       humidity: response.data.main.humidity,
       wind: Math.round(response.data.wind.speed),
@@ -23,7 +24,7 @@ export default function Weather(props) {
   }
 
   function search() {
-    const apiKey = "70364b058f5b4645ec579f5a5b226617";
+    const apiKey = "679b40954b2c6d5ff093713c7a2bd537";
     let units = "imperial";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
     axios.get(apiUrl).then(handleResponse);
@@ -71,6 +72,15 @@ export default function Weather(props) {
     );
   } else {
     search();
-    return "App Loading ...";
+    return (
+      <div>
+        <div>
+          <h3 className="loading-message">App Loading ...</h3>
+        </div>
+        <div className="loading-animation">
+          <Grid color="#ff69b4" height={80} width={80} />
+        </div>
+      </div>
+    );
   }
 }

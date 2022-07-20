@@ -52,6 +52,16 @@
   margin-left: 5px;
 }
 
+.loading-message {
+  color: #ff69b4;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.loading-animation {
+  justify-content: center;
+}
+
 .WeatherInfo .date-description {
   margin-top: 5px;
 }
