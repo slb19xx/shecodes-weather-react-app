@@ -1,8 +1,14 @@
 .Weather {
   font-family: "Gill Sans", sans-serif;
-  border: 1px solid #ff69b4;
+  border: 1px solid #2a52be;
   border-radius: 4px;
   padding: 16px;
+}
+
+.Weather .search-button {
+  background: #bb88fa;
+  border: 1px solid #fff;
+  color: #000;
 }
 
 .Weather form {
@@ -64,4 +70,13 @@
 
 .WeatherInfo .date-description {
   margin-top: 5px;
+}
+
+.WeatherTemperature a {
+  text-decoration: none;
+  color: #bb88fa;
+}
+
+.WeatherTemperature a:hover {
+  color: #ff69b4;
 }

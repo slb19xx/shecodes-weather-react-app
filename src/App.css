@@ -12,3 +12,12 @@ body {
   font-size: 14px;
   margin: 10px 0;
 }
+
+.App .footer-link {
+  text-decoration: none;
+  color: #bb88fa;
+}
+
+.App .footer-link:hover {
+  color: #ff69b4;
+}

@@ -11,6 +11,7 @@ export default function App() {
             href="https://github.com/slb19xx/weather-react-app"
             target="_blank"
             rel="noreferrer"
+            className="footer-link"
           >
             Open Source Code
           </a>{" "}
@@ -19,6 +20,7 @@ export default function App() {
             href="https://www.linkedin.com/in/sharibaldie/"
             target="_blank"
             rel="noreferrer"
+            className="footer-link"
           >
             Shari Baldie
           </a>
